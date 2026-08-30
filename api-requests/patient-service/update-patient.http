@@ -1,0 +1,13 @@
+### update the exsisting entity
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+
+{
+  "name" : "sujal",
+  "email": "test@email.com",
+  "address": "absAt123",
+  "dateOfBirth": "2004-11-11",
+  "registeredDate": "2323-12-12"
+}
+###

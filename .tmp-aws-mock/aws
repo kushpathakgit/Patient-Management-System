@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ "$1" = "--endpoint-url=http://localhost:4566" ] && [ "$2" = "cloudformation" ]; then
+  exit 0
+fi
+if [ "$1" = "--endpoint-url=http://localhost:4566" ] && [ "$2" = "elbv2" ]; then
+  echo "An error occurred (InternalFailure) when calling the DescribeLoadBalancers operation" >&2
+  exit 1
+fi
+exit 0

@@ -1,0 +1,13 @@
+### POST request to add new patient entity
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name" : "analytics test kafka",
+  "email": "kafka.analytics.test@email.com",
+  "address": "absAt123",
+  "dateOfBirth": "2004-11-11",
+  "registeredDate": "2023-10-10"
+}
+###

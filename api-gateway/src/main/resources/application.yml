@@ -1,0 +1,10 @@
+server:
+  port: 4004 # Gateway listens on port 4004
+
+auth:
+  service:
+    url: ${AUTH_SERVICE_URL:http://localhost:4005}
+
+patient:
+  service:
+    url: ${PATIENT_SERVICE_URL:http://localhost:4000}
